@@ -1,9 +1,14 @@
-package rpckids.demo;
 
+/**
+ * 计算指数
+ * 输出数据
+ * @author gongzhihao
+ *
+ */
 public class ExpResponse {
 
-	private long value;
-	private long costInNanos;
+	private long value; //值
+	private long costInNanos; //花费时间（纳秒）
 
 	public ExpResponse() {
 	}

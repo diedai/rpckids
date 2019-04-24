@@ -1,8 +1,13 @@
-package rpckids.demo;
+
 
 import rpckids.client.RPCClient;
 import rpckids.client.RPCException;
 
+/**
+ * 客户端入口
+ * @author gongzhihao
+ *
+ */
 public class DemoClient {
 
 	private RPCClient client;
@@ -23,7 +28,8 @@ public class DemoClient {
 	public static void main(String[] args) throws InterruptedException {
 		RPCClient client = new RPCClient("localhost", 8888);
 		DemoClient demo = new DemoClient(client);
-		for (int i = 0; i < 30; i++) {
+		
+		for (int i = 0; i < 1; i++) {
 			try {
 				System.out.printf("fib(%d) = %d\n", i, demo.fib(i));
 				Thread.sleep(100);
@@ -31,7 +37,8 @@ public class DemoClient {
 				i--; // retry
 			}
 		}
-		for (int i = 0; i < 30; i++) {
+		
+		for (int i = 0; i < 1; i++) {
 			try {
 				ExpResponse res = demo.exp(2, i);
 				Thread.sleep(100);
@@ -40,6 +47,7 @@ public class DemoClient {
 				i--; // retry
 			}
 		}
+		
 		client.close();
 	}
 

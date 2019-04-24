@@ -1,8 +1,13 @@
-package rpckids.demo;
 
+/**
+ * 计算指数
+ * 输入数据
+ * @author gongzhihao
+ *
+ */
 public class ExpRequest {
-	private int base;
-	private int exp;
+	private int base; //指数基数
+	private int exp; //指数
 
 	public ExpRequest() {
 	}
