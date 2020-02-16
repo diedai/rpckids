@@ -1,3 +1,4 @@
+package rpckids.demo;
 
 /**
  * 计算指数

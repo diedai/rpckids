@@ -1,3 +1,4 @@
+package rpckids.demo;
 
 
 import rpckids.server.RPCServer;
